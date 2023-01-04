@@ -67,8 +67,8 @@ namespace Calculadora
                     num2 = int.Parse(Console.ReadLine());
                     //Cálculo e resultado
                     resultado = num1 + num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("");
+                    Console.WriteLine($"Resultado: {resultado}");
+                    Console.WriteLine("Aperte ENTER para retornar ao MENU");
                     break;
                 case Opcao.Subtrair:
                     Console.WriteLine("Escolha 2 números para realizar a operação de subtração: ");
@@ -80,8 +80,8 @@ namespace Calculadora
                     Console.Write("-");
                     num2 = int.Parse(Console.ReadLine());
                     resultado = num1 - num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("");
+                    Console.WriteLine($"Resultado: {resultado}");
+                    Console.WriteLine("Aperte ENTER para retornar ao MENU");
                     break;
                 case Opcao.Multiplicar:
                     Console.WriteLine("Escolha 2 números para realizar a operação de multiplicação: ");
@@ -93,8 +93,8 @@ namespace Calculadora
                     Console.Write("*");
                     num2 = int.Parse(Console.ReadLine());
                     resultado = num1 * num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("");
+                    Console.WriteLine($"Resultado: {resultado}");
+                    Console.WriteLine("Aperte ENTER para retornar ao MENU");
                     break;
                 case Opcao.Dividir:
                     Console.WriteLine("Escolha 2 números para realizar a operação de divisão: ");
@@ -106,14 +106,14 @@ namespace Calculadora
                     Console.Write("/");
                     num2 = int.Parse(Console.ReadLine());
                     resultado = num1 / num2;
-                    Console.WriteLine("Resultado: " + resultado);
-                    Console.WriteLine("");
+                    Console.WriteLine($"Resultado: {resultado}");
+                    Console.WriteLine("Aperte ENTER para retornar ao MENU");
                     break;
                 case Opcao.Sair:
                     Environment.Exit(0);
                     break;
                 default:
-                    Console.WriteLine("Opção não encontrada, tente novamente");
+                    Console.WriteLine("Opção não encontrada, tente novamente.");
                     break;
             }
         }
